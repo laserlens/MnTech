@@ -54,23 +54,80 @@ h1, h2, h3, h4, h5, h6 {
   font-family: Europa, sans-serif;
 }
 
-p {
+p, span {
   font-family: Garamond;
 }
 
 /*--------------------------------------------------------------------------------------------
 Colors
 ---------------------------------------------------------------------------------------------*/
-
+:root {
 --slate-grey: #333D46;
 --vibrant-green: #B1DD01;
 --navy: #123855;
---storm-gray: #638290;
---cloud-gray: #C0C5CE;
+--storm-grey: #638290;
+--cloud-grey: #C0C5CE;
+}
+
+/*--------------------------------------------------------------------------------------------
+Globals
+---------------------------------------------------------------------------------------------*/
+body {
+	font-size: 62.5%;
+}
 
 /*--------------------------------------------------------------------------------------------
 Landing Page
 ---------------------------------------------------------------------------------------------*/
-#landing-page{
-  background-color: #333D46;
+#landing-page {
+  background-color: var(--slate-grey);
+	height: 100%;
+	width: 100%;
+}
+
+.logo-container {
+	height: 500px;
+	margin: 0 auto;
+	width: 15%;
+	z-index: 10;
+}
+
+.logo-container img {
+	max-height: 100%;
+	max-width: 100%;
+}
+
+.navigate-container {
+	position: relative;
+}
+
+.navigate-container-left {
+	border-right: 1px solid var(--vibrant-green);
+}
+
+.navigate-container-right {
+	border-left: 1px solid var(--vibrant-green);
+}
+
+.navigate-container-left, .navigate-container-right {
+	width: 50%;
+}
+
+.navigate-container-right {
+	bottom: 0;
+	float: right;
+	position: absolute;
+	right: 0;
+}
+
+.navigate-text {
+	color: var(--vibrant-green);
+	font-family: Europa, sans-serif;
+	font-size: 4em;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.navigate-text-container {
+	margin: 0 auto;
 }
