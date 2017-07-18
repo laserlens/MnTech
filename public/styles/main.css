@@ -81,12 +81,14 @@ Landing Page
 ---------------------------------------------------------------------------------------------*/
 #landing-page {
   background-color: var(--slate-grey);
-	height: 100%;
-	width: 100%;
+	/*bottom: 0;
+	left: 0;
+	position: fixed;*/
+	min-height: 100%;
+	min-width: 100%;
 }
 
 .logo-container {
-	height: 500px;
 	margin: 0 auto;
 	width: 15%;
 	z-index: 10;
@@ -95,6 +97,7 @@ Landing Page
 .logo-container img {
 	max-height: 100%;
 	max-width: 100%;
+	padding: 5em 0 2em 0;
 }
 
 .navigate-container {
@@ -123,11 +126,15 @@ Landing Page
 .navigate-text {
 	color: var(--vibrant-green);
 	font-family: Europa, sans-serif;
-	font-size: 4em;
-	font-weight: 700;
+	font-size: 5em;
+	font-weight: 600;
 	text-transform: uppercase;
 }
 
-.navigate-text-container {
-	margin: 0 auto;
+.navigate-text.large {
+	font-size: 6em;
+}
+
+.navigate-text.right {
+	text-align: right;
 }
