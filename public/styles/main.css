@@ -77,6 +77,7 @@ Colors
 --navy: #123855;
 --storm-grey: #638290;
 --cloud-grey: #C0C5CE;
+--white: #f5f5f5;
 }
 
 /*--------------------------------------------------------------------------------------------
@@ -84,6 +85,30 @@ Globals
 ---------------------------------------------------------------------------------------------*/
 body {
 	font-size: 62.5%;
+}
+
+.global-navbar {
+	background-color: var(--white);
+	box-sizing: padding-box;
+	padding: 1.5em 0 2em 2em;
+	position: relative;
+	width: 100vw;
+}
+
+.global-navbar nav {
+	bottom: 0;
+	float: right;
+	position: absolute;
+	right: 0;
+}
+
+.logo-container-global {
+	width: 15vw;
+}
+
+.logo-container-global img {
+	max-height: 100%;
+	max-width: 100%;
 }
 
 /*--------------------------------------------------------------------------------------------
@@ -95,13 +120,12 @@ Landing Page
 	min-width: 100vw;
 }
 
-.logo-container {
+.logo-container-landing {
 	margin: 0 auto 1em;
 	width: 15%;
-	z-index: 10;
 }
 
-.logo-container img {
+.logo-container-landing img {
 	margin-left: 1em;
 	max-height: 100%;
 	max-width: 100%;
@@ -147,3 +171,8 @@ Landing Page
 .navigate-text.large {
 	font-size: 12em;
 }
+
+
+/*--------------------------------------------------------------------------------------------
+Home Page
+---------------------------------------------------------------------------------------------*/
