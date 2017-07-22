@@ -59,26 +59,25 @@ html {
 Fonts
 ---------------------------------------------------------------------------------------------*/
 
-h1, h2, h3, h4, h5, h6, span {
+h1, h2, h3, h4, h5, h6, span, p {
   font-family: 'Montserrat', sans-serif;
 
 }
 
-p {
-  font-family: Garamond;
-}
-
 .page-header {
-	background-color: var(--storm-grey);
+	background-color: var(--slate-grey);
 	min-width: 100vw;
+	text-align: center;
 }
 
-h1 .header-title {
+h1.header-title {
 	color: var(--vibrant-green);
+	text-transform: uppercase;
 }
 
-p .header-content {
-	color: var(--cloud-grey);
+p.header-content {
+	color: var(--white);
+	font-weight: 200;
 }
 
 /*--------------------------------------------------------------------------------------------
@@ -230,9 +229,16 @@ Home Page
 }
 
 .home-header .header-title {
-	font-size: 4em;
+	font-size: 7em;
+	padding: 0.75em 0.75em 0.5em 0.75em;
 }
 
 .home-header .header-content {
 	font-size: 2.5em;
+	letter-spacing: 0.5px;
+	padding-bottom: 3em;
+}
+
+.service {
+	display: inline-block;
 }
