@@ -103,6 +103,7 @@ body {
 .global-navbar {
 	background-color: var(--white);
 	box-sizing: padding-box;
+	height: 23vh;
 	padding: 1.5em 0 3em 3em;
 	position: relative;
 	width: 100vw;
@@ -118,7 +119,7 @@ body {
 }
 
 .global-navbar nav a {
-	border-bottom: solid 2px var(--dark-grey);
+	border-bottom: solid 2px var(--navy);
 	padding: 0 1em 2em 1em;
 	transition: 0.25s ease-in;
 }
@@ -228,6 +229,10 @@ Home Page
 	min-width: 100vw;
 }
 
+.home-header {
+	height: 37vh;
+}
+
 .home-header .header-title {
 	font-size: 7em;
 	padding: 0.75em 0.75em 0.5em 0.75em;
@@ -236,9 +241,41 @@ Home Page
 .home-header .header-content {
 	font-size: 2.5em;
 	letter-spacing: 0.5px;
-	padding-bottom: 3em;
 }
 
-.service {
+li.service {
 	display: inline-block;
+	height: 40vh;
+	width: 33.33%;
+}
+
+ul.services-section-list {
+	position: relative;
+}
+
+li.service.web-design, li.service.apps {
+	background-color: var(--cloud-grey);
+	color: var(--navy);
+	position: relative;
+}
+
+li.service.branding {
+	background-color: var(--storm-grey);
+	color: var(--white);
+	position: relative;
+}
+
+li.service.web-design, li.service.apps, li.service.branding {
+	position: relative;
+}
+
+.service-header {
+	font-size: 3.5em;
+	left: 50%;
+	position: absolute;
+	text-align: center;
+	text-transform: uppercase;
+	top: 25%;
+	transform: translate(-50%, -50%);
+	width: 100%;
 }
