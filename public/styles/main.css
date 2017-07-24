@@ -55,30 +55,6 @@ html {
 	box-sizing: inherit;
 }
 
-/*--------------------------------------------------------------------------------------------
-Fonts
----------------------------------------------------------------------------------------------*/
-
-h1, h2, h3, h4, h5, h6, span, p {
-  font-family: 'Montserrat', sans-serif;
-
-}
-
-.page-header {
-	background-color: var(--slate-grey);
-	min-width: 100vw;
-	text-align: center;
-}
-
-h1.header-title {
-	color: var(--vibrant-green);
-	text-transform: uppercase;
-}
-
-p.header-content {
-	color: var(--white);
-	font-weight: 200;
-}
 
 /*--------------------------------------------------------------------------------------------
 Colors
@@ -156,6 +132,32 @@ body {
 .logo-container-global img {
 	max-height: 100%;
 	max-width: 100%;
+}
+
+
+.page-header {
+	background-color: var(--slate-grey);
+	min-width: 100vw;
+	text-align: center;
+}
+
+h1.header-title {
+	color: var(--vibrant-green);
+	text-transform: uppercase;
+}
+
+p.header-content {
+	color: var(--white);
+	font-weight: 200;
+}
+
+/*--------------------------------------------------------------------------------------------
+Fonts
+---------------------------------------------------------------------------------------------*/
+
+h1, h2, h3, h4, h5, h6, span, p {
+  font-family: 'Montserrat', sans-serif;
+
 }
 
 /*--------------------------------------------------------------------------------------------
@@ -270,7 +272,9 @@ li.service.web-design, li.service.apps, li.service.branding {
 }
 
 .service-header {
+	cursor: pointer;
 	font-size: 3.5em;
+	font-weight: 500;
 	left: 50%;
 	position: absolute;
 	text-align: center;
@@ -278,4 +282,34 @@ li.service.web-design, li.service.apps, li.service.branding {
 	top: 25%;
 	transform: translate(-50%, -50%);
 	width: 100%;
+}
+
+
+/*--------------------------------------------------------------------------------------------
+About Page
+---------------------------------------------------------------------------------------------*/
+#about-page {
+	position: fixed;
+	min-height: 100vh;
+	min-width: 100vw;
+}
+
+.about-navbar {
+	height: 16vh;
+}
+
+.about-navbar .logo-container-global {
+	height: 11vh
+}
+
+.about-header .header-title {
+	font-size: 5em;
+	padding: 0.75em 0.75em 0.5em 0.75em;
+}
+
+.about-header .header-content {
+	font-size: 2em;
+	letter-spacing: 0.5px;
+	max-width: 60vw;
+	margin: 0 auto;
 }
