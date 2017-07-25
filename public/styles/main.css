@@ -80,7 +80,6 @@ body {
 	background-color: var(--white);
 	box-sizing: padding-box;
 	height: 23vh;
-	padding: 1.5em 0 3em 3em;
 	position: relative;
 	width: 100vw;
 }
@@ -126,12 +125,12 @@ body {
 }
 
 .logo-container-global {
-	width: 11vw;
+	width: 20em;
 }
 
 .logo-container-global img {
-	max-height: 100%;
-	max-width: 100%;
+	height: 100%;
+	width: 100%;
 }
 
 
@@ -236,12 +235,12 @@ Home Page
 }
 
 .home-header .header-title {
-	font-size: 7em;
+	font-size: 10em;
 	padding: 0.75em 0.75em 0.5em 0.75em;
 }
 
 .home-header .header-content {
-	font-size: 2.5em;
+	font-size: 3.66em;
 	letter-spacing: 0.5px;
 }
 
@@ -259,12 +258,25 @@ li.service.web-design, li.service.apps {
 	background-color: var(--cloud-grey);
 	color: var(--navy);
 	position: relative;
+	text-shadow:
+		-1px -1px 0 var(--white),
+    1px -1px 0 var(--white),
+    -1px 1px 0 var(--white),
+    1px 1px 0 var(--white);
+
 }
 
 li.service.branding {
 	background-color: var(--storm-grey);
+	border-left: 2px solid var(--slate-grey);
+	border-right: 2px solid var(--slate-grey);
 	color: var(--white);
 	position: relative;
+	text-shadow:
+		-1px -1px 0 var(--slate-grey),
+		1px -1px 0 var(--slate-grey),
+		-1px 1px 0 var(--slate-grey),
+		1px 1px 0 var(--slate-grey);
 }
 
 li.service.web-design, li.service.apps, li.service.branding {
