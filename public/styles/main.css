@@ -204,10 +204,6 @@ Landing Page
 	padding-left: 7em;
 }
 
-.navigate-container-right {
-
-}
-
 .navigate-text {
 	color: var(--vibrant-green);
 	font-family: 'Montserrat', sans-serif;
@@ -311,7 +307,8 @@ About Page
 }
 
 .about-navbar .logo-container-global {
-	height: 11vh
+	height: 100%;
+	width: 15em;
 }
 
 .about-header .header-title {
