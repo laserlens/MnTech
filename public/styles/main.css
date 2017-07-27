@@ -322,3 +322,17 @@ About Page
 	max-width: 60vw;
 	margin: 0 auto;
 }
+
+.core-values .value-header {
+	color: var(--navy);
+	font-size: 2.5em;
+}
+
+.core-value-list .core-value {
+	color: var(--navy);
+	font-size: 1.6em;
+}
+
+.core-value-list .core-value .value-header {
+	font-weight: 500;
+}
