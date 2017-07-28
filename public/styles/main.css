@@ -331,23 +331,27 @@ About Page
 	width: 45vw;
 }
 
+.core-value-list {
+	color: var(--navy);
+}
+
+.core-values .values-header {
+	font-size: 1.6em;
+	font-weight: 500;
+}
+
 .core-values .core-value-list {
 	background-color: var(--cloud-grey);
 	height: 45vh;
 }
 
-.core-values .value-header {
-	color: var(--navy);
-	font-size: 1.2em;
-}
-
-.core-value-list .core-value {
-	color: var(--navy);
-	font-size: 1.6em;
-}
-
-.core-value-list .core-value .value-header {
+.core-value .value-header {
 	font-weight: 500;
+}
+
+.core-value-list .core-value .value-content {
+	font-size: 1.2em;
+	font-weight: 200;
 }
 
 .legal-stuff.values-legal {
