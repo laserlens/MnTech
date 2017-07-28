@@ -311,6 +311,10 @@ About Page
 	width: 15em;
 }
 
+.about-header {
+	height: 30vh;
+}
+
 .about-header .header-title {
 	font-size: 5em;
 	padding: 0.75em 0.75em 0.5em 0.75em;
@@ -323,9 +327,18 @@ About Page
 	margin: 0 auto;
 }
 
+.values-legal-section {
+	width: 45vw;
+}
+
+.core-values .core-value-list {
+	background-color: var(--cloud-grey);
+	height: 45vh;
+}
+
 .core-values .value-header {
 	color: var(--navy);
-	font-size: 2.5em;
+	font-size: 1.2em;
 }
 
 .core-value-list .core-value {
@@ -335,4 +348,9 @@ About Page
 
 .core-value-list .core-value .value-header {
 	font-weight: 500;
+}
+
+.legal-stuff.values-legal {
+	background-color: var(--storm-grey);
+	height: 9vh;
 }
