@@ -328,27 +328,28 @@ About Page
 }
 
 .values-legal-section {
-	width: 45vw;
+	width: 40vw;
 }
 
 .core-value-list {
 	color: var(--navy);
 }
 
-.core-values .values-header {
-	font-size: 2.2em;
+.core-values .values-header, .legal-stuff.values-legal .legal-header {
+	font-size: 2.6em;
 	font-weight: 500;
 	text-transform: uppercase;
 }
 
 .core-values .core-value-list {
 	background-color: var(--cloud-grey);
-	height: 45vh;
+	height: 41vh;
 	padding: 1em;
 }
 
-.core-value {
+.core-value, .legal-stuff.values-legal {
 	line-height: 1.35;
+	padding-top: 1em;
 }
 
 .core-value .value-header {
@@ -356,12 +357,18 @@ About Page
 	font-weight: 500;
 }
 
-.core-value-list .core-value .value-content {
+.core-value-list .core-value .value-content, .legal-content {
 	font-size: 1.4em;
 	font-weight: 200;
 }
 
 .legal-stuff.values-legal {
 	background-color: var(--storm-grey);
-	height: 9vh;
+	color: var(--white);
+	height: 13vh;
+	padding: 0.45em;
+}
+
+.legal-header {
+	color: var(--cloud-grey);
 }
