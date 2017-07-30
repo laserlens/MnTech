@@ -336,21 +336,28 @@ About Page
 }
 
 .core-values .values-header {
-	font-size: 1.6em;
+	font-size: 2.2em;
 	font-weight: 500;
+	text-transform: uppercase;
 }
 
 .core-values .core-value-list {
 	background-color: var(--cloud-grey);
 	height: 45vh;
+	padding: 1em;
+}
+
+.core-value {
+	line-height: 1.35;
 }
 
 .core-value .value-header {
+	font-size: 1.4em;
 	font-weight: 500;
 }
 
 .core-value-list .core-value .value-content {
-	font-size: 1.2em;
+	font-size: 1.4em;
 	font-weight: 200;
 }
 
