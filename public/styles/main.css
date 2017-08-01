@@ -327,6 +327,8 @@ About Page
 	margin: 0 auto;
 }
 
+/*Left Side*/
+
 .values-legal-section {
 	width: 40vw;
 }
@@ -371,4 +373,24 @@ About Page
 
 .legal-header {
 	color: var(--cloud-grey);
+}
+
+/*Right Side*/
+
+.members-section {
+	bottom: 0;
+	background-color: white;
+	float: right;
+	height: 54vh;
+	padding: 2em;
+	position: absolute;
+	right: 0;
+	width: 60vw;
+}
+
+.members-section-header {
+	color: var(--navy);
+	font-size: 4em;
+	text-align: center;
+	text-transform: uppercase;
 }
