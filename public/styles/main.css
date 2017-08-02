@@ -380,6 +380,7 @@ About Page
 .members-section {
 	bottom: 0;
 	background-color: white;
+	color: var(--navy);
 	float: right;
 	height: 54vh;
 	padding: 2em;
@@ -389,8 +390,48 @@ About Page
 }
 
 .members-section-header {
-	color: var(--navy);
 	font-size: 4em;
 	text-align: center;
 	text-transform: uppercase;
+}
+
+.member .image-container {
+	border: 1px solid var(--cloud-grey);
+	border-radius: 50%;
+	height: 8em;
+	width: 8em;
+}
+
+.member {
+	margin: 2em 0;
+	position: relative;
+}
+
+.member.jeff .image-container {
+	background-image: url("../assets/images/jeff.jpg");
+	background-size: cover;
+}
+
+.member.adrian .image-container {
+	background-image: url("../assets/images/adrian.jpg");
+	background-size: cover;
+}
+
+.member.hannah .image-container {
+	background-image: url("../assets/images/hannah.jpg");
+	background-size: cover;
+}
+
+.member-bio {
+	bottom: 0;
+	font-size: 1.4em;
+	float: right;
+	margin-right: 3em;
+	position: absolute;
+	right: 0;
+	width: 80%;
+}
+
+.member-bio .bio-content {
+	font-weight: 200;
 }
