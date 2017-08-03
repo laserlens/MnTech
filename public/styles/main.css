@@ -168,6 +168,12 @@ Landing Page
 	min-width: 100vw;
 }
 
+#general-page {
+	position: fixed;
+	min-height: 100vh;
+	min-width: 100vw;
+}
+
 .logo-container-landing {
 	margin: 0 auto 1em;
 	width: 15%;
@@ -220,11 +226,6 @@ Landing Page
 /*--------------------------------------------------------------------------------------------
 Home Page
 ---------------------------------------------------------------------------------------------*/
-#home-page {
-	position: fixed;
-	min-height: 100vh;
-	min-width: 100vw;
-}
 
 .home-header {
 	height: 37vh;
@@ -296,17 +297,12 @@ li.service.web-design, li.service.apps, li.service.branding {
 /*--------------------------------------------------------------------------------------------
 About Page
 ---------------------------------------------------------------------------------------------*/
-#about-page {
-	position: fixed;
-	min-height: 100vh;
-	min-width: 100vw;
-}
 
-.about-navbar {
+.general-navbar {
 	height: 16vh;
 }
 
-.about-navbar .logo-container-global {
+.general-navbar .logo-container-global {
 	height: 100%;
 	width: 15em;
 }
@@ -435,3 +431,8 @@ About Page
 .member-bio .bio-content {
 	font-weight: 200;
 }
+
+
+/*--------------------------------------------------------------------------------------------
+Services Page
+---------------------------------------------------------------------------------------------*/
