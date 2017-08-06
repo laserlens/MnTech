@@ -110,7 +110,8 @@ body {
 
 .global-navbar nav a:hover,
 .global-navbar nav a:focus,
-.global-navbar nav a:active {
+.global-navbar nav a:active
+.global-navbar nav a:visited {
 	border-bottom: solid 2px var(--vibrant-green);
 }
 
