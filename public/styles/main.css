@@ -79,7 +79,7 @@ body {
 .global-navbar {
 	background-color: var(--white);
 	box-sizing: padding-box;
-	height: 23vh;
+	height: 16vh;
 	position: relative;
 	width: 100vw;
 }
@@ -91,20 +91,21 @@ body {
 	padding: 2em;
 	position: absolute;
 	right: 0;
+	width: 45vw;
 }
 
 .global-navbar nav a {
 	border-bottom: solid 2px var(--navy);
-	padding: 0 1em 2em 1em;
+	padding: 0 4em 2em 4em;
 	transition: 0.25s ease-in;
 }
 
 .global-navbar nav a:first-child {
-	padding: 0 1em 2em 2em;
+	padding: 0 4em 2em 3em;
 }
 
 .global-navbar nav a:last-child {
-	padding: 0 2em 2em 1em;
+	padding: 0 3em 2em 4em;
 }
 
 .global-navbar nav a:hover,
@@ -113,20 +114,25 @@ body {
 	border-bottom: solid 2px var(--vibrant-green);
 }
 
-
-/*.global-navbar nav a {
-	margin-bottom: 2em;
-}*/
-
 .nav-link {
 	color: var(--dark-grey);
-	font-size: 1.75em;
+	font-size: 2.25em;
 	text-transform: uppercase;
 }
 
 .logo-container-global {
-	width: 20em;
+	margin-left: 4em;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 13em;
 }
+
+/*
+.general-navbar .logo-container-global {
+	height: 100%;
+	width: 15em;
+}*/
 
 .logo-container-global img {
 	height: 100%;
@@ -147,7 +153,7 @@ h1.header-title {
 
 p.header-content {
 	color: var(--white);
-	font-weight: 200;
+	font-weight: 300;
 }
 
 /*--------------------------------------------------------------------------------------------
@@ -227,23 +233,23 @@ Landing Page
 Home Page
 ---------------------------------------------------------------------------------------------*/
 
-.home-header {
-	height: 37vh;
+.page-header.home-header {
+	height: 41vh;
 }
 
-.home-header .header-title {
+.page-header.home-header .header-title {
 	font-size: 10em;
 	padding: 0.75em 0.75em 0.5em 0.75em;
 }
 
-.home-header .header-content {
+.page-header.home-header .header-content {
 	font-size: 3.66em;
 	letter-spacing: 0.5px;
 }
 
 li.service {
 	display: inline-block;
-	height: 40vh;
+	height: 43vh;
 	width: 33.33%;
 }
 
@@ -283,7 +289,7 @@ li.service.web-design, li.service.apps, li.service.branding {
 .service-header {
 	cursor: pointer;
 	font-size: 3.5em;
-	font-weight: 500;
+	font-weight: 600;
 	left: 50%;
 	position: absolute;
 	text-align: center;
@@ -298,66 +304,55 @@ li.service.web-design, li.service.apps, li.service.branding {
 About Page
 ---------------------------------------------------------------------------------------------*/
 
-.general-navbar {
-	height: 16vh;
-}
-
-.general-navbar .logo-container-global {
-	height: 100%;
-	width: 15em;
-}
-
-.about-header {
+.page-header {
 	height: 30vh;
 }
 
-.about-header .header-title {
-	font-size: 5em;
-	padding: 0.75em 0.75em 0.5em 0.75em;
+.page-header .header-title {
+	font-size: 8em;
+	padding: 0.33em;
 }
 
-.about-header .header-content {
-	font-size: 2em;
+.page-header .header-content {
+	font-size: 3em;
 	letter-spacing: 0.5px;
+	line-height: 1.25;
 	max-width: 60vw;
 	margin: 0 auto;
 }
 
 /*Left Side*/
 
-.values-legal-section {
+.left-side {
+	background-color: var(--cloud-grey);
+	color: var(--navy);
 	width: 40vw;
 }
 
-.core-value-list {
-	color: var(--navy);
-}
-
-.core-values .values-header, .legal-stuff.values-legal .legal-header {
+.header {
 	font-size: 2.6em;
-	font-weight: 500;
+	font-weight: 600;
 	text-transform: uppercase;
 }
 
 .core-values .core-value-list {
-	background-color: var(--cloud-grey);
 	height: 41vh;
 	padding: 1em;
 }
 
-.core-value, .legal-stuff.values-legal {
+.left-side .list-item {
 	line-height: 1.35;
 	padding-top: 1em;
 }
 
-.core-value .value-header {
-	font-size: 1.4em;
-	font-weight: 500;
+.list-header {
+	font-size: 1.8em;
+	font-weight: 600;
 }
 
-.core-value-list .core-value .value-content, .legal-content {
-	font-size: 1.4em;
-	font-weight: 200;
+.list-content {
+	font-size: 1.8em;
+	font-weight: 300;
 }
 
 .legal-stuff.values-legal {
@@ -373,7 +368,7 @@ About Page
 
 /*Right Side*/
 
-.members-section {
+.right-side {
 	bottom: 0;
 	background-color: white;
 	color: var(--navy);
@@ -385,7 +380,7 @@ About Page
 	width: 60vw;
 }
 
-.members-section-header {
+.section-header {
 	font-size: 4em;
 	text-align: center;
 	text-transform: uppercase;
@@ -429,10 +424,18 @@ About Page
 }
 
 .member-bio .bio-content {
-	font-weight: 200;
+	font-weight: 300;
 }
 
 
 /*--------------------------------------------------------------------------------------------
 Services Page
 ---------------------------------------------------------------------------------------------*/
+
+.left-side {
+	height: 54vh;
+}
+
+.services-section.left-side {
+	padding: 1em;
+}
