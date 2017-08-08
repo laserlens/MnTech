@@ -76,6 +76,21 @@ body {
 	font-size: 62.5%;
 }
 
+main {
+	position: relative;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: var(--vibrant-green) auto 5px;
+}
+
+label {
+	display: inline-block;
+}
+
 .global-navbar {
 	background-color: var(--white);
 	box-sizing: padding-box;
@@ -327,6 +342,8 @@ About Page
 .left-side {
 	background-color: var(--cloud-grey);
 	color: var(--navy);
+	float: left;
+	position: relative;
 	width: 40vw;
 }
 
@@ -370,14 +387,12 @@ About Page
 /*Right Side*/
 
 .right-side {
-	bottom: 0;
 	background-color: white;
 	color: var(--navy);
 	float: right;
 	height: 54vh;
 	padding: 2em;
-	position: absolute;
-	right: 0;
+	position: relative;
 	width: 60vw;
 }
 
@@ -395,8 +410,9 @@ About Page
 }
 
 .member {
-	margin: 2em 0;
+	margin: 5em auto;
 	position: relative;
+	width: 75%;
 }
 
 .member.jeff .image-container {
@@ -439,4 +455,45 @@ Services Page
 
 .services-section.left-side {
 	padding: 1em;
+}
+
+/*Right Side - Form*/
+
+.request-form {
+	color: var(--navy);
+	font-family: 'Montserrat', sans-serif;
+}
+
+.request-form label {
+	font-size: 2em;
+	padding-bottom: 5px;
+	text-transform: uppercase;
+}
+
+.input-container {
+	margin: 1.5em 1em;
+}
+
+.request-form input, .request-form textarea {
+	color: var(--dark-grey);
+	font-size: 2em;
+	padding: 5px;
+	width: 100%;
+}
+
+.request-form .email-container, .request-form .phone-container {
+	width: 48%;
+}
+
+.input-container.phone-container {
+	float: right;
+}
+
+.input-container.email-container {
+	float: left;
+}
+
+.input-container.description-container {
+	clear: both;
+	margin-bottom: 4em;
 }

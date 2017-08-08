@@ -1,18 +1,6 @@
 <div id="general-page">
-<!-- <header class="global-navbar general-navbar">
-  <div class="logo-container-global">
-    <img src="/assets/images/mntc_logo_grey.png" alt="The logo for Minnesota Tech. It consists
-              of the geographical shape of minnesota, painted vibrant green, the the text MN Tech
-              coop inside of it" title="The MN Tech Logo" />
-  </div>
-  <nav>
-    <a href="/home"><span class="nav-link">Home</span></a
-    ><a href="/about"><span class="nav-link">About</span></a
-    ><a href="/services"><span class="nav-link">Services</span></a
-    ><a href="/join"><span class="nav-link">Join</span></a
-    ><a href="/blog"><span class="nav-link">Blog</span></a>
-  </nav>
-</header> -->
+
+
 <main class="services-content">
   <section class="page-header services-header">
     <div class="content-container">
@@ -51,20 +39,29 @@
       <h2 class="quote-header">Request A Quote</h2>
     </div>
     <form class="request-form">
-      <label class="name-label" for="name">Name</label>
-      <input class="name-input" type="text" name="name" />
-
-      <label class="organization-lable" for="organization">Company/Organization</label>
-      <input class="organization-input" type="text" name="organization" />
-
-      <label class="email-label" for="email">Email</label>
-      <input class="email-input" type="text" name="email" />
-
-      <label class="phone-label" for="phone">Phone</label>
-      <input class="phone-input" type="text" name="phone" />
-
-      <label class="description-label" for="description">Describe your project</label>
-      <input class="description-input" type="text" name="description" />
+      <div class="input-container">
+        <label class="name-label" for="name">Name</label>
+        <input class="name-input" type="text" name="name" />
+      </div>
+      <div class="input-container">
+        <label class="organization-label" for="organization">Company/Organization</label>
+        <input class="organization-input" type="text" name="organization" />
+      </div>
+      <div class="input-container email-container">
+        <label class="email-label" for="email">Email</label>
+        <input class="email-input" type="email" name="email" />
+      </div>
+      <div class="input-container phone-container">
+        <label class="phone-label" for="phone">Phone</label>
+        <input class="phone-input" type="tel" name="phone" />
+      </div>
+      <div class="input-container description-container">
+        <label class="description-label" for="description">Describe your project</label>
+        <textarea class="description-input" name="description" ></textarea>
+      </div>
+      <div class="input-container submit-button">
+        <input type="submit" />
+      </div>
     </form>
   </section>
 </main>
