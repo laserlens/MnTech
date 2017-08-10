@@ -38,7 +38,7 @@
     <div class="section-header">
       <h2 class="quote-header">Request A Quote</h2>
     </div>
-    <form class="request-form">
+    <form class="request-form" ng-model="services.formData" ng-submit="services.sendFormData(services.formData)">
       <div class="input-container">
         <label class="name-label" for="name">Name</label>
         <input class="name-input" type="text" name="name" />
@@ -60,7 +60,7 @@
         <textarea class="description-input" name="description" ></textarea>
       </div>
       <div class="input-container submit-button">
-        <input type="submit" />
+        <input type="submit"/>
       </div>
     </form>
   </section>
