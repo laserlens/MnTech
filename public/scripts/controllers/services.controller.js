@@ -1,12 +1,14 @@
 angular.module('mnTechSite')
        .controller('ServicesController', ServicesController);
 
-function ServicesController() {
+function ServicesController(quoteServ) {
   console.log('ServicesController Loaded');
 
-  var ctrl = this;
+  const ctrl = this;
 
   ctrl.sendFormData = function(data) {
-    console.log(data);
+    quoteServ.sendFormData(data).then(function(response){
+      console.log("Response from submit: ", repsonse);
+    });
   }
 }
