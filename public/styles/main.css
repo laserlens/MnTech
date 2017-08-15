@@ -343,6 +343,7 @@ About Page
 	background-color: var(--cloud-grey);
 	color: var(--navy);
 	float: left;
+	padding: 1em;
 	position: relative;
 	width: 40vw;
 }
@@ -350,6 +351,7 @@ About Page
 .header {
 	font-size: 2.6em;
 	font-weight: 600;
+	text-align: center;
 	text-transform: uppercase;
 }
 
@@ -361,6 +363,10 @@ About Page
 .left-side .list-item {
 	line-height: 1.35;
 	padding-top: 1em;
+}
+
+.left-side .list-item:first-child {
+	padding-top: 0;
 }
 
 .list-header {
@@ -375,13 +381,18 @@ About Page
 
 .legal-stuff.values-legal {
 	background-color: var(--storm-grey);
+	bottom: 0;
 	color: var(--white);
 	height: 13vh;
-	padding: 0.45em;
+	left: 0;
+	padding: 1em;
+	position: absolute;
+	width: 100%;
 }
 
-.legal-header {
+.legal-header.header {
 	color: var(--cloud-grey);
+	text-align: left;
 }
 
 /*Right Side*/
@@ -391,28 +402,34 @@ About Page
 	color: var(--navy);
 	float: right;
 	height: 54vh;
-	padding: 2em;
+	padding: 1em;
 	position: relative;
 	width: 60vw;
 }
 
-.section-header {
+.members-header.header {
 	font-size: 4em;
 	text-align: center;
-	text-transform: uppercase;
+}
+
+.member {
+	height: 12em;
+	margin: 2em auto;
+	position: relative;
+	width: 100%;
 }
 
 .member .image-container {
 	border: 1px solid var(--cloud-grey);
 	border-radius: 50%;
-	height: 8em;
-	width: 8em;
+	height: 12em;
+	margin-left: 5%;
+	width: 12em;
 }
 
-.member {
-	margin: 5em auto;
-	position: relative;
-	width: 75%;
+.image-container {
+	float: left;
+	clear: left;
 }
 
 .member.jeff .image-container {
@@ -431,13 +448,15 @@ About Page
 }
 
 .member-bio {
-	bottom: 0;
 	font-size: 1.4em;
 	float: right;
-	margin-right: 3em;
-	position: absolute;
+	line-height: 1.35;
+	margin: auto;
 	right: 0;
 	width: 80%;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
 }
 
 .member-bio .bio-content {
@@ -454,7 +473,7 @@ Services Page
 }
 
 .services-section.left-side {
-	padding: 1em;
+	/*padding: 1em;*/
 }
 
 /*Right Side - Form*/
