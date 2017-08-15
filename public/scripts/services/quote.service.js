@@ -14,6 +14,7 @@ function QuoteService($http) {
       organization: data.organization,
       description: data.description
     };
+    console.log(service.emailData);
     return $http.post('/postEmail', service.emailData)
     .then(function(response){
       return repsonse;

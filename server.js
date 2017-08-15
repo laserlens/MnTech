@@ -19,17 +19,16 @@ const server = app.listen(port, function () {
   console.log('MnTech is listening on port', server.address().port);
 });
 
+let transporter = nodemailer.createTransport({
+  // host: 'smtp.example.com',
+  service: 'gmail',
+  auth: {
+      user: 'mntechcoop@gmail.com',
+      pass: 'Mn*Tech*2017!'
+  },
+});
 
 app.post('/postEmail', function(req, res) {
-  let transporter = nodemailer.createTransport({
-    // host: 'smtp.example.com',
-    port: 5000,
-    secure: false, // secure:true for port 465, secure:false for port 587
-    auth: {
-        user: 'mntechcoop@gmail.com',
-        pass: 'Mn*Tech*2017!'
-    },
-  });
 
   // setup email data with unicode symbols
   let mailOptions = {
@@ -37,7 +36,7 @@ app.post('/postEmail', function(req, res) {
       to: req.body.to, // list of receivers
       subject: 'Quote for Project.', // Subject line
       text: req.body.description, // plain text body
-      // html: '<b>Hello world ?</b>' // html body
+      html: '<b>Hello world ?</b>' + req.body.description// html body
   };
 
   // send mail with defined transport object
