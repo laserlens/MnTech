@@ -1,11 +1,12 @@
 angular.module('mnTechSite')
-       .service('quoteServ', QuoteService);
+       .service('emailServ', EmailService);
 
-function QuoteService($http) {
+function EmailService($http) {
 
   const service = this;
 
   service.sendFormData = function(data) {
+    console.log("In the service: ", data);
     service.emailData = {
       name: data.name,
       from: data.email,
@@ -14,11 +15,11 @@ function QuoteService($http) {
       organization: data.organization,
       description: data.description
     };
-    console.log(service.emailData);
     return $http.post('/postEmail', service.emailData)
     .then(function(response){
       return repsonse;
     });
-    console.log("From QuoteService: ", service.emailData);
   }
+
+
 } // End of Service

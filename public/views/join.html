@@ -1,2 +1,86 @@
-<h1>Join</h1>
-<p>This is the join page.</p>
+<div id="general-page">
+
+
+<main class="join-content">
+  <section class="page-header services-header">
+    <div class="content-container">
+      <h1 class="header-title">Become a Member</h1>
+      <p class="header-content">Tired of the freelance grind? MN Tech is a great place to receive mentorship, build
+                your skillset, get more clients, and make more money. Tell us about yourself,
+                don't be shy!
+      </p>
+    </div>
+  </section>
+
+  <section class="join-section left-side">
+    <h2 class="join-section-header header">Member Benefits</h2>
+    <ul class="join-list">
+      <li class="join-item list-item">
+        <h6 class="join-item-header list-header">More Clients</h6>
+        <p class="list-content">Working as a freelancer is hard work, and find clients
+                  is even harder. Joining our cooperative gives you a known and trusted
+                  name to work behind. Making landing and retaining clients simple and easy.
+        </p>
+      </li>
+      <li class="join-item list-item">
+        <h6 class="join-item-header list-header">Doing Good in MN</h6>
+        <p class="list-content">There are countless small businesses and non-profits in our
+                  great state. Help those business increase their profits, so they can provide for
+                  their families. Help non-profits spread their message and keep our
+                  Republican Democracy thriving.
+        </p>
+      </li>
+      <li class="join-item list-item">
+        <h6 class="join-item-header list-header">More Members == More Skills</h6>
+        <p class="list-content">Many of our members are self taught or come from non-traditional education
+                  backgrounds. We know what it is like to be just getting started. That's why we emphasize
+                  mentorship and support to help you become them best you can be. Tech veteran? Well then,
+                  as you know, there is always more to learn!
+        </p>
+      </li>
+      <li class="join-item list-item">
+        <h6 class="join-item-header list-header">Build Your Portfolio</h6>
+        <p class="list-content">Help yourself land your next big job by building
+                  your portfolio with us. Nothing proves your passion and dedication
+                  to your craft to an employer that a big fat stack of things you built.
+        </p>
+      </li>
+    </ul>
+  </section>
+
+  <section class="join-us-section right-side">
+    <div class="section-header">
+      <h2 class="join-us-header header">Become A Member</h2>
+    </div>
+    <form class="request-form" ng-model="join">
+      <div class="input-container">
+        <label class="name-label" for="name">Name</label>
+        <input class="name-input" type="text" name="name" ng-model="join.name" />
+      </div>
+      <div class="input-container">
+        <label class="address-label" for="address">Address</label>
+        <input class="address-input" type="text" name="address" ng-model="join.address" />
+      </div>
+      <div class="input-container email-container">
+        <label class="email-label" for="email">Email</label>
+        <input class="email-input" type="email" name="email" ng-model="join.email" />
+      </div>
+      <div class="input-container phone-container">
+        <label class="phone-label" for="phone">Phone</label>
+        <input class="phone-input" type="tel" name="phone" ng-model="join.phone" />
+      </div>
+      <div class="input-container sample-container">
+        <label class="sample-label" for="sample">Website/Blog/Portfolio</label>
+        <input class="sample-input" type="text" name="sample" ng-model="join.sample" />
+      </div>
+      <div class="input-container info-container">
+        <label class="info-label" for="info">Tell us about yourself</label>
+        <textarea class="info-input" name="info" ng-model="join.info" ></textarea>
+      </div>
+      <div class="input-container submit-button">
+        <input type="submit" ng-click="services.sendFormData(services)"/>
+      </div>
+    </form>
+  </section>
+</main>
+</div>

@@ -30,11 +30,15 @@ let transporter = nodemailer.createTransport({
 
 app.post('/postEmail', function(req, res) {
 
+  // setup email data with unicode symbols
   let mailOptions = {
-      to: req.body.to,
-      subject: 'Quote for Project.',
-      text: req.body.description,
-      html: '<b>From: </b>' + req.body.from + '<br />' + '<b>Project Description: </b>' + req.body.description
+      from: req.body.from, // sender address
+      to: req.body.to, // list of receivers
+      subject: 'Quote for Project.', // Subject line
+      name: req.body.name,
+      phone: req.body.phone,
+      organization: req.body.organization,
+      text: req.body.description // plain text body
   };
 
   // send mail with defined transport object

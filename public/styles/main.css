@@ -343,7 +343,7 @@ About Page
 	background-color: var(--cloud-grey);
 	color: var(--navy);
 	float: left;
-	padding: 1em;
+	padding: 1.5em 3em;
 	position: relative;
 	width: 40vw;
 }
@@ -362,7 +362,7 @@ About Page
 
 .left-side .list-item {
 	line-height: 1.35;
-	padding-top: 1em;
+	padding: 1em 0 1em;
 }
 
 .left-side .list-item:first-child {
@@ -372,6 +372,7 @@ About Page
 .list-header {
 	font-size: 1.8em;
 	font-weight: 600;
+	text-transform: uppercase;
 }
 
 .list-content {
@@ -385,7 +386,7 @@ About Page
 	color: var(--white);
 	height: 13vh;
 	left: 0;
-	padding: 1em;
+	padding: 1.5em 3em;
 	position: absolute;
 	width: 100%;
 }
@@ -402,7 +403,7 @@ About Page
 	color: var(--navy);
 	float: right;
 	height: 54vh;
-	padding: 1em;
+	padding: 1.5em 3em;
 	position: relative;
 	width: 60vw;
 }
@@ -472,13 +473,29 @@ Services Page
 	height: 54vh;
 }
 
-.services-section.left-side {
-	/*padding: 1em;*/
+.services-section-header, .quote-header {
+	font-size: 4em;
+}
+
+.services-list {
+	padding-right: 3em;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.services-list a {
+	color: var(--navy);
+	transition: 0.15s ease-in;
+}
+
+.services-list a:hover {
+	text-decoration: underline;
 }
 
 /*Right Side - Form*/
 
-.request-form {
+.request-form, textarea {
 	color: var(--navy);
 	font-family: 'Montserrat', sans-serif;
 }
@@ -515,4 +532,15 @@ Services Page
 .input-container.description-container {
 	clear: both;
 	margin-bottom: 4em;
+}
+
+
+
+/*--------------------------------------------------------------------------------------------
+Join Us Page
+---------------------------------------------------------------------------------------------*/
+
+/*Right Side*/
+.join-us-section form.request-form .info-container {
+	margin-bottom: 2em;
 }
