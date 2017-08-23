@@ -28,17 +28,50 @@ let transporter = nodemailer.createTransport({
   },
 });
 
-app.post('/postEmail', function(req, res) {
+app.post('/postQuoteEmail', function(req, res) {
 
   // setup email data with unicode symbols
   let mailOptions = {
       from: req.body.from, // sender address
       to: req.body.to, // list of receivers
-      subject: 'Quote for Project.', // Subject line
+      subject: req.body.subject, // Subject line
       name: req.body.name,
+      sender: req.body.sender,
       phone: req.body.phone,
-      organization: req.body.organization,
-      text: req.body.description // plain text body
+      text: req.body.description, // plain text body
+      html: '<h4>Name:</h4><p> ' + req.body.name + '</p>' +
+            '<h4>Phone:</h4><p> ' + req.body.phone + '</p>' +
+            '<h4>Organization:</h4><p> ' + req.body.organization + '</p>' +
+            '<h4>Email:</h4><p> ' + req.body.email + '</p>' +
+            '<h4>Project Description:</h4><p> ' + req.body.description + '</p>'
+  };
+
+  // send mail with defined transport object
+  transporter.sendMail(mailOptions, (error, info) => {
+      if (error) {
+          return console.log("From sendMail: ", error, "Object: ", mailOptions);
+      }
+      console.log('Message %s sent: %s', info.messageId, info.response);
+  });
+});
+
+app.post('/postMembershipEmail', function(req, res) {
+
+  // setup email data with unicode symbols
+  let mailOptions = {
+      from: req.body.from, // sender address
+      to: req.body.to, // list of receivers
+      subject: req.body.subject, // Subject line
+      name: req.body.name,
+      sender: req.body.sender,
+      phone: req.body.phone,
+      text: req.body.description, // plain text body
+      html: '<h4>Name:</h4><p> ' + req.body.name + '</p>' +
+            '<h4>Address:</h4><p> ' + req.body.address + '</p>' +
+            '<h4>Phone:</h4><p> ' + req.body.phone + '</p>' +
+            '<h4>Email:</h4><p> ' + req.body.email + '</p>' +
+            '<h4>Work Sample:</h4><p> ' + req.body.sample + '</p>' +
+            '<h4>Info:</h4><p> ' + req.body.info + '</p>'
   };
 
   // send mail with defined transport object

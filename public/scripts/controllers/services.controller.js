@@ -7,6 +7,7 @@ function ServicesController(emailServ) {
   const ctrl = this;
 
   ctrl.sendFormData = function(data) {
+    data.subject = "Requesting A Quote"
     console.log(ServicesController.name);
     emailServ.sendFormData(data).then(function(response){
       console.log("Response from submit: ", repsonse);

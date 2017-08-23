@@ -544,3 +544,7 @@ Join Us Page
 .join-us-section form.request-form .info-container {
 	margin-bottom: 2em;
 }
+
+.request-form div:first-child {
+	margin-top: 0;
+}
