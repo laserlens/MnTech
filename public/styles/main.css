@@ -186,8 +186,12 @@ Landing Page
 ---------------------------------------------------------------------------------------------*/
 #landing-page {
   background-color: var(--slate-grey);
+	left: 0;
 	min-height: 100vh;
 	min-width: 100vw;
+	position: absolute;
+	top: 0;
+
 }
 
 #general-page {
@@ -197,7 +201,7 @@ Landing Page
 }
 
 .logo-container-landing {
-	margin: 0 auto 1em;
+	margin: 3em auto 1em;
 	width: 15%;
 }
 
