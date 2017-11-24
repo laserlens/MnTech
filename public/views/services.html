@@ -1,0 +1,75 @@
+<div id="general-page">
+
+
+<main class="services-content">
+  <section class="page-header services-header">
+    <div class="content-container">
+      <h1 class="header-title">Services with principle</h1>
+      <p class="header-content">Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit. Aenean eu justo a nisi consectetur dignissim.
+                    Morbi sit amet nulla elit. Nullam quis consectetur nunc.
+                    Curabitur lobortis laoreet lacus nec sagittis.
+      </p>
+    </div>
+  </section>
+
+  <section class="services-section left-side">
+    <h2 class="services-section-header header">Services</h2>
+    <ul class="services-list">
+      <li class="service-item list-item">
+        <h6 class="service-item-header list-header">Web Design</h6>
+        <p class="list-content">MN Tech is blessed enough to employ some of the best
+                  web designers in the state. We use simple and elegant design patterns
+                  that provide stunning visuals while create a user first experience.
+        <a href="/services">Check out our design work!</a></p>
+      </li>
+      <li class="service-item list-item">
+        <h6 class="service-item-header list-header">Branding</h6>
+        <p class="list-content">Branding is a key component to making your business or
+                  organizations services memorable. MN Tech will dig deep into your companies
+                  culture, goals, and aspirations to create a brand that best represents you.
+        <a href="/services">Come see how MN Tech has unforgettable brands!</a></p>
+      </li>
+      <li class="service-item list-item">
+        <h6 class="service-item-header list-header">Apps &amp; More</h6>
+        <p class="list-content">Along with great web designers and marketers, MN Tech is home to
+                                 an amazing staff of web developers and software engineers. Using
+                                 the power of tech, we can build solutions that increase productivity,
+                                 increase revenue, and spread your message.
+        <a href="/services">Come see how are tech has improved the lives of many!</a></p>
+      </li>
+    </ul>
+  </section>
+
+  <section class="quote-section right-side">
+    <div class="section-header">
+      <h2 class="quote-header header">Request A Quote</h2>
+    </div>
+    <form class="request-form" ng-model="services">
+      <div class="input-container">
+        <label class="name-label" for="name">Name</label>
+        <input class="name-input" type="text" name="name" ng-model="services.name" />
+      </div>
+      <div class="input-container">
+        <label class="organization-label" for="organization">Company/Organization</label>
+        <input class="organization-input" type="text" name="organization" ng-model="services.organization" />
+      </div>
+      <div class="input-container email-container">
+        <label class="email-label" for="email">Email</label>
+        <input class="email-input" type="email" name="email" ng-model="services.email" />
+      </div>
+      <div class="input-container phone-container">
+        <label class="phone-label" for="phone">Phone</label>
+        <input class="phone-input" type="tel" name="phone" ng-model="services.phone" />
+      </div>
+      <div class="input-container description-container">
+        <label class="description-label" for="description">Describe your project</label>
+        <textarea class="description-input" name="description" ng-model="services.description" ></textarea>
+      </div>
+      <div class="input-container submit-button">
+        <input type="submit" ng-click="services.sendQuoteData(services)"/>
+      </div>
+    </form>
+  </section>
+</main>
+</div>

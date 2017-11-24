@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html ng-app="mnTechSite">
+  <head>
+    <meta charset="utf-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1' />
+    <title>MN Tech</title>
+
+    <!-- Stylesheets and Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/main.css" />
+
+    <!-- Vendors -->
+    <script src="/assets/vendors/angular.min.js"></script>
+    <script src="/assets/vendors/angular-route.min.js"></script>
+    <script src="/assets/vendors/Sortable.min.js"></script>
+    <!-- Angular Setup -->
+    <script src="/scripts/app.module.js"></script>
+    <script src="/scripts/app.config.js"></script>
+    <!-- Controllers -->
+    <script src="/scripts/controllers/base.controller.js"></script>
+    <script src='/scripts/controllers/landing.controller.js'></script>
+    <script src="/scripts/controllers/services.controller.js"></script>
+    <script src="/scripts/controllers/join.controller.js"></script>
+    <script src="/scripts/controllers/blog.controller.js"></script>
+    <script src="/scripts/controllers/survey.controller.js"></script>
+
+    <!--  Services -->
+    <script src="/scripts/services/email.service.js"></script>
+
+    <base href="/" />
+  </head>
+  <body>
+    <header class="global-navbar">
+      <div class="logo-container-global">
+        <img src="/assets/images/mntc_logo_grey.png" alt="The logo for Minnesota Tech. It consists
+                  of the geographical shape of minnesota, painted vibrant green, the the text MN Tech
+                  coop inside of it" title="The MN Tech Logo" />
+      </div>
+      <nav>
+        <a href="/home"><span class="nav-link">Home</span></a
+        ><a href="/about"><span class="nav-link">About</span></a
+        ><a href="/services"><span class="nav-link">Services</span></a
+        ><a href="/join"><span class="nav-link">Join</span></a
+        ><a href="/blog"><span class="nav-link">Blog</span></a>
+      </nav>
+    </header>
+    <ng-view>
+
+    </ng-view>
+  </body>
+</html>
