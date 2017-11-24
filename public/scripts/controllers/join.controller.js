@@ -6,10 +6,10 @@ function JoinController(emailServ) {
 
   var ctrl = this;
 
-  ctrl.sendFormData = function(data) {
+  ctrl.sendMemberData = function(data) {
     data.subject = "Membership Request"
     console.log(ServicesController.name);
-    emailServ.sendFormData(data).then(function(response){
+    emailServ.sendMemberData(data).then(function(response){
       console.log("Response from submit: ", repsonse);
     });
   }
